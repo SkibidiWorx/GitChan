@@ -1,26 +1,32 @@
 :root{
     background-color: rgb(15, 15, 30);
+    font-family: monospace, monospace;
 }
 
 a{
-    font-family: monospace, monospace;
     font-size: 1rem;
-    color: rgb(230, 230, 225);
+    color: rgba(230, 230, 225, 0.65);
     margin: 0.25rem;
     transition: 300ms;
 }
 
 p{
-    font-family: monospace, monospace;
     font-size: 1rem;
-    color: rgb(230, 230, 225);
-    margin: 0.25rem;
+    color: rgba(230, 230, 225, 0.65);
+    margin: 1rem;
+}
+
+img{
+    margin: 1rem;
+    outline: solid 2px rgba(230, 230, 225, 0.65);
+    border-radius: 0.5rem;
 }
 
 .topnavbar1{
     display: flex;
     flex-direction: row;
-    outline: solid 2px rgb(230, 230, 225);
+    outline: solid 2px rgba(230, 230, 225, 0.65);
+    margin: 1rem;
     padding: 0.5rem;
     border-radius: 0.5rem;
     overflow: hidden;
@@ -38,5 +44,25 @@ p{
 }
 
 .topnavbar1 p{
+    font-size: 1.25rem;
+    margin: 0.25rem;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    outline: solid 2px rgba(230, 230, 225, 0.65);
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.post p{
+    margin: 0.25rem;
+    white-space: pre-line;
+}
+
+.name{
+    color: skyblue;
     font-size: 1.25rem;
 }

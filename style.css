@@ -1,0 +1,42 @@
+:root{
+    background-color: rgb(15, 15, 30);
+}
+
+a{
+    font-family: monospace, monospace;
+    font-size: 1rem;
+    color: rgb(230, 230, 225);
+    margin: 0.25rem;
+    transition: 300ms;
+}
+
+p{
+    font-family: monospace, monospace;
+    font-size: 1rem;
+    color: rgb(230, 230, 225);
+    margin: 0.25rem;
+}
+
+.topnavbar1{
+    display: flex;
+    flex-direction: row;
+    outline: solid 2px rgb(230, 230, 225);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.topnavbar1 a{
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.topnavbar1 a:hover{
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: darkred;
+}
+
+.topnavbar1 p{
+    font-size: 1.25rem;
+}

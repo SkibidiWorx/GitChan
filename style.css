@@ -66,3 +66,11 @@ img{
     color: skyblue;
     font-size: 1.25rem;
 }
+
+.acceptrules{
+    color: white;
+}
+
+.acceptrules:hover{
+    color: burlywood;
+}

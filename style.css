@@ -42,8 +42,7 @@ img{
 
 .topnavbar1{
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(7, 1fr);
     outline: solid 2px var(--textcolor);
     margin: 1rem;
     padding: 0.5rem;
@@ -55,6 +54,7 @@ img{
     font-size: var(--navbartextsize);
     line-height: var(--navbartextheight);
     font-weight: var(--navbarfontweight);
+    text-wrap: nowrap;
     text-decoration: none;
 }
 

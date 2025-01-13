@@ -1,31 +1,49 @@
 :root{
+    --navbartextsize: 1.25rem;
+    --navbartextheight: 1.5rem;
+    --navbarfontweight: 600;
+    --defaulttextsize: 1rem;
+    --defaulttextheight: 1.4rem;
+    --defaultfontweight: 400;
+    --textcolor: rgba(230, 230, 225, 0.65);
+
     background-color: rgb(15, 15, 30);
     font-family: monospace, monospace;
 }
 
+.container{
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column: auto;
+}
+
 a{
-    font-size: 1rem;
-    color: rgba(230, 230, 225, 0.65);
+    font-size: var(--defaulttextsize);
+    line-height: var(--defaulttextheight);
+    font-weight: var(--defaultfontweight);
+    color: var(--textcolor);
     margin: 0.25rem;
     transition: 300ms;
 }
 
 p{
-    font-size: 1rem;
-    color: rgba(230, 230, 225, 0.65);
+    font-size: var(--defaulttextsize);
+    line-height: var(--defaulttextheight);
+    font-weight: var(--defaultfontweight);
+    color: var(--textcolor);
     margin: 1rem;
 }
 
 img{
     margin: 1rem;
-    outline: solid 2px rgba(230, 230, 225, 0.65);
+    outline: solid 2px var(--textcolor);
     border-radius: 0.5rem;
 }
 
 .topnavbar1{
     display: flex;
     flex-direction: row;
-    outline: solid 2px rgba(230, 230, 225, 0.65);
+    outline: solid 2px var(--textcolor);
     margin: 1rem;
     padding: 0.5rem;
     border-radius: 0.5rem;
@@ -33,25 +51,37 @@ img{
 }
 
 .topnavbar1 a{
-    font-size: 1.25rem;
+    font-size: var(--navbartextsize);
+    line-height: var(--navbartextheight);
+    font-weight: var(--navbarfontweight);
     text-decoration: none;
 }
 
 .topnavbar1 a:hover{
-    font-size: 1.25rem;
     text-decoration: none;
     color: darkred;
 }
 
 .topnavbar1 p{
-    font-size: 1.25rem;
+    font-size: var(--navbartextsize);
+    line-height: var(--navbartextheight);
+    font-weight: var(--navbarfontweight);
     margin: 0.25rem;
+}
+
+.largetextmainpagetitle{
+    margin: 2.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 5rem;
+    font-weight: bolder;
+    letter-spacing: -8%;
 }
 
 .post{
     display: flex;
     flex-direction: column;
-    outline: solid 2px rgba(230, 230, 225, 0.65);
+    outline: solid 2px var(--textcolor);
     margin: 1rem;
     padding: 0.5rem;
     border-radius: 0.5rem;
@@ -60,6 +90,7 @@ img{
 .post p{
     margin: 0.25rem;
     white-space: pre-line;
+    font-weight: 600;
 }
 
 .name{
@@ -70,4 +101,5 @@ img{
 .acceptrules{
     color: white;
     cursor: progress;
+    font-weight: 600;
 }

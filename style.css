@@ -41,8 +41,7 @@ img{
 }
 
 .topnavbar1{
-    display: flex;
-    flex-direction: row;
+    display: grid;
     outline: solid 2px var(--textcolor);
     margin: 1rem;
     padding: 0.5rem;
